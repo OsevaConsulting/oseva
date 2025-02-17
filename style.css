@@ -1,1 +1,66 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+}
 
+header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+}
+
+.logo {
+    margin-bottom: 1.5rem;
+}
+
+.form-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.cta {
+    text-align: center;
+    padding: 2rem;
+    background: #ecf0f1;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
