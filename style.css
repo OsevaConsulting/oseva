@@ -37,6 +37,33 @@ input, select {
     font-size: 16px;
 }
 
+.github-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: #24292f;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: transform 0.2s, background 0.2s;
+    font-weight: 600;
+}
+
+.github-button:hover {
+    background: #2d3339;
+    transform: translateY(-2px);
+}
+
+.github-icon {
+    fill: white;
+}
+
 button {
     width: 100%;
     padding: 15px;
