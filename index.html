@@ -3,54 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osêva | Soluções Estratégicas para PMEs</title>
+    <title>Osêva | Dados que Impulsionam PMEs</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/oseva-logo.png" alt="Osêva Logo" class="logo">">
-<div class="github-section"> 
-    <a href="https://github.com/OsevaConsulting/oseva" 
-       class="github-button" 
-       target="_blank" 
-       rel="noopener noreferrer">
-        <svg class="github-icon" viewBox="0 0 16 16" width="20" height="20">
-            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-        </svg>
-        Deixe sua estrela
-    </a>
-</div>
+    <link rel="icon" type="image/png" href="assets/logo-oseva.png">
 </head>
 <body>
-    <header>
-        <img src="https://via.placeholder.com/150x50?text=Osêva+Logo" alt="Osêva Logo" class="logo">
-        <h1>Transforme dados em resultados</h1>
-        <p>Pré-cadastre-se para acesso antecipado às nossas ferramentas de diagnóstico</p>
+    <!-- Seção Hero (Problem + Amplify) -->
+    <header class="hero">
+        <img src="assets/logo-oseva.png" alt="Osêva" class="logo">
+        <div class="hero-content">
+            <h1>Seu Excel virou um pesadelo?</h1>
+            <p class="subtitle">73% dos gestores de PMEs perdem 20h/mês tomando decisões às cegas.<br>Nós transformamos dados em <span class="highlight">lucro mensurável</span>.</p>
+        </div>
     </header>
 
-    <section class="form-section">
-        <form id="preCadastroForm" action="https://formspree.io/f/meoeppgb" method="POST">
-            <div class="form-group">
-                <input type="email" name="email" placeholder="Seu melhor e-mail" required>
-            </div>
-            <div class="form-group">
-                <input type="text" name="nome" placeholder="Seu nome completo" required>
-            </div>
-            <div class="form-group">
-                <select name="negocio" required>
-                    <option value="">Qual seu segmento?</option>
-                    <option value="varejo">Varejo</option>
-                    <option value="agronegocio">Agronegócio</option>
-                    <option value="servicos">Serviços</option>
-                </select>
-            </div>
-            <button type="submit">Quero otimizar meu negócio</button>
-        </form>
+    <!-- Story + Testimony -->
+    <section class="story">
+        <div class="card">
+            <h2>Da frustração à ação</h2>
+            <p>Em 2023, a <strong>Move+ Logística</strong> estava prestes a fechar as portas. Com nossa análise preditiva:</p>
+            <ul class="results">
+                <li>✅ Redução de 35% nos custos operacionais</li>
+                <li>✅ Aumento de 22% na margem líquida</li>
+                <li>✅ 140h/ano economizadas em planilhas</li>
+            </ul>
+        </div>
     </section>
 
-    <section class="cta">
-        <p>🔍 Em breve: Diagnóstico de eficiência operacional e simulador de ROI gratuitos!</p>
+    <!-- Offer + Formulário -->
+    <section class="offer">
+        <div class="form-container">
+            <h2>Sua vez de transformar dados em vantagem</h2>
+            <p class="offer-sub">Preencha o formulário e <strong>ganhe um diagnóstico gratuito</strong> + acesso antecipado ao Osêva Lab</p>
+            
+            <form id="preCadastroForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                <div class="form-group">
+                    <input type="text" name="nome" placeholder="Seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="E-mail corporativo" required>
+                </div>
+                <div class="form-group">
+                    <select name="cargo" required>
+                        <option value="">Seu cargo na empresa</option>
+                        <option value="ceo">CEO/Dono</option>
+                        <option value="gestor">Gestor/Gerente</option>
+                        <option value="analista">Analista/Especialista</option>
+                    </select>
+                </div>
+                <button type="submit">Quero meu diagnóstico grátis →</button>
+            </form>
+        </div>
     </section>
 
+    <!-- Response + CTA Final -->
     <footer>
-        <p>© 2024 Osêva. <a href="https://github.com/OsevaConsulting/oseva" target="_blank">Código-fonte no GitHub</a></p>
+        <div class="footer-content">
+            <a href="https://github.com/OsevaConsulting/oseva" 
+               class="github-button" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <svg class="github-icon" viewBox="0 0 16 16" width="20" height="20">
+                    <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+                Deixe sua estrela
+            </a>
+            <p class="copy">© 2024 Osêva – Transformando dados em legado</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
