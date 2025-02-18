@@ -1,93 +1,170 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
-    background: #f5f7fa;
+    box-sizing: border-box;
 }
 
-header {
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
     text-align: center;
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #2c3e50, #3498db);
-    color: white;
+    background: linear-gradient(45deg, #1a1a1a 0%, #000 100%);
+    border-bottom: 1px solid #333;
 }
 
 .logo {
+    width: 180px;
+    margin-bottom: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.highlight {
+    color: #4facfe;
+    font-weight: 600;
+}
+
+/* Story Section */
+.story {
+    padding: 4rem 2rem;
+    background: #111;
+}
+
+.card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #1a1a1a;
+    border-radius: 12px;
+    border: 1px solid #333;
+}
+
+.card h2 {
+    color: #4facfe;
     margin-bottom: 1.5rem;
 }
 
-.form-section {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+.results li {
+    list-style: none;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #000;
+    border-left: 4px solid #4facfe;
 }
 
+/* Offer Section */
+.offer {
+    padding: 4rem 2rem;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.offer h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.offer-sub {
+    color: #888;
+    margin-bottom: 2rem;
+}
+
+/* Form Styles */
 .form-group {
     margin-bottom: 1.5rem;
 }
 
 input, select {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 14px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
     font-size: 16px;
 }
 
-.github-section {
+button[type="submit"] {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    padding: 3rem 2rem;
+    background: #000;
     text-align: center;
-    margin: 2rem 0;
+    border-top: 1px solid #333;
 }
 
 .github-button {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 10px 20px;
-    background: #24292f;
-    color: white !important;
+    padding: 12px 24px;
+    background: #1a1a1a;
+    color: #4facfe !important;
     text-decoration: none;
-    border-radius: 6px;
-    transition: transform 0.2s, background 0.2s;
-    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid #333;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s;
 }
 
 .github-button:hover {
-    background: #2d3339;
-    transform: translateY(-2px);
+    background: #4facfe;
+    color: #000 !important;
+    border-color: transparent;
 }
 
-.github-icon {
-    fill: white;
-}
-
-button {
-    width: 100%;
-    padding: 15px;
-    background: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background: #2980b9;
-}
-
-.cta {
-    text-align: center;
-    padding: 2rem;
-    background: #ecf0f1;
-}
-
-footer {
-    text-align: center;
-    padding: 2rem;
+.copy {
     color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
 }
