@@ -1,78 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osêva | Dados que Impulsionam PMEs</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/logo-oseva.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Osêva - Transforme Dados em Vantagem</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000; /* Fundo preto */
+      color: #fff; /* Texto branco */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+
+    .content {
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      text-align: left;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #ccc;
+    }
+
+    input, select {
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 4px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+    }
+
+    button {
+      background-color: #00b894;
+      color: #fff;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #019f82;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.875rem;
+      color: #888;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <!-- Seção Hero (Problem + Amplify) -->
-    <header class="hero">
-        <img src="assets/logo-oseva.png" alt="Osêva" class="logo">
-        <div class="hero-content">
-            <h1>Seu Excel virou um pesadelo?</h1>
-            <p class="subtitle">73% dos gestores de PMEs perdem 20h/mês tomando decisões às cegas.<br>Nós transformamos dados em <span class="highlight">lucro mensurável</span>.</p>
-        </div>
-    </header>
 
-    <!-- Story + Testimony -->
-    <section class="story">
-        <div class="card">
-            <h2>Da frustração à ação</h2>
-            <p>Em 2023, a <strong>Move+ Logística</strong> estava prestes a fechar as portas. Com nossa análise preditiva:</p>
-            <ul class="results">
-                <li>✅ Redução de 35% nos custos operacionais</li>
-                <li>✅ Aumento de 22% na margem líquida</li>
-                <li>✅ 140h/ano economizadas em planilhas</li>
-            </ul>
-        </div>
-    </section>
+  <header>
+    <h1>Sua vez de transformar <br> dados em vantagem</h1>
+    <h2>Garanta seu <strong>diagnóstico gratuito</strong> <br> + acesso antecipado ao <strong>Osêva Lab</strong></h2>
+  </header>
 
-    <!-- Offer + Formulário -->
-    <section class="offer">
-        <div class="form-container">
-            <h2>Sua vez de transformar dados em vantagem</h2>
-            <p class="offer-sub">Preencha o formulário e <strong>ganhe um diagnóstico gratuito</strong> + acesso antecipado ao Osêva Lab</p>
-            
-            <form id="preCadastroForm" action="https://formspree.io/f/meoeppgb" method="POST">
-                <div class="form-group">
-                    <input type="text" name="nome" placeholder="Seu nome completo" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="E-mail corporativo" required>
-                </div>
-                <div class="form-group">
-                    <select name="cargo" required>
-                        <option value="">Seu cargo na empresa</option>
-                        <option value="ceo">CEO/Dono</option>
-                        <option value="gestor">Gestor/Gerente</option>
-                        <option value="analista">Analista/Especialista</option>
-                    </select>
-                </div>
-                <button type="submit">Quero meu diagnóstico grátis →</button>
-            </form>
-        </div>
-    </section>
+  <div class="content">
+    <p>
+      Você, micro ou pequeno empresário, sabe que otimizar processos e escalar seu negócio pode ser um desafio.
+      A <strong>Osêva Consultoria</strong> une inovação, design de novos negócios, estratégias de dados e mais de
+      20 anos de experiência para ajudar empreendedores a criar e escalar negócios de forma inteligente.
+    </p>
+    <p>
+      Ao se cadastrar agora, você garante acesso antecipado às nossas <strong>ferramentas open-source</strong> e recebe um 
+      <strong>diagnóstico gratuito</strong> sobre como seus dados podem impulsionar seu crescimento.
+    </p>
+  </div>
 
-    <!-- Response + CTA Final -->
-    <footer>
-        <div class="footer-content">
-            <a href="https://github.com/OsevaConsulting/oseva" 
-               class="github-button" 
-               target="_blank" 
-               rel="noopener noreferrer">
-                <svg class="github-icon" viewBox="0 0 16 16" width="20" height="20">
-                    <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                </svg>
-                Deixe sua estrela
-            </a>
-            <p class="copy">© 2024 Osêva – Transformando dados em legado</p>
-        </div>
-    </footer>
+  <form action="https://formspree.io/f/SEU-ENDPOINT-AQUI" method="POST">
+    <label for="name">Nome</label>
+    <input type="text" id="name" name="name" placeholder="Seu nome" required>
 
-    <script src="script.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+    <label for="cargo">Cargo</label>
+    <input type="text" id="cargo" name="cargo" placeholder="Seu cargo/posição" required>
+
+    <label for="segmento">Segmento</label>
+    <select id="segmento" name="segmento" required>
+      <option value="">Selecione</option>
+      <option value="Agronegócio">Agronegócio</option>
+      <option value="Varejo">Varejo</option>
+      <option value="Serviços">Serviços</option>
+    </select>
+
+    <button type="submit">Quero meu diagnóstico gratuito</button>
+  </form>
+
+  <footer>
+    © 2025 - Osêva Consultoria. Todos os direitos reservados.
+  </footer>
+
 </body>
 </html>
